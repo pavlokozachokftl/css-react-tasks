@@ -1,0 +1,29 @@
+.icon_input {
+    position: relative;
+}
+
+.icon_input :local(input) {
+    padding-right: 40px;
+}
+
+.label {
+    display: block;
+
+    position: absolute;
+    right: 1px;
+    top: 1px;
+
+    width: 34px;
+    height: calc(100% - 2px);
+
+    text-align: center;
+    line-height: 32px;
+
+    background-color: var(--light-grey-purple);
+
+    border-radius: 0 3px 3px 0;
+
+    font-weight: lighter;
+
+    color: var(--grey-label-text);
+}

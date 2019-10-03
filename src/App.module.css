@@ -1,11 +1,78 @@
 .App {
-  padding: 30px;
-  max-width: 500px;
-  margin: 0 auto;
-  text-align: center;
+    padding: 30px;
+    margin: 0 auto;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/*
+    Style Guide fixes
+*/
+
+:root {
+    /*  Colors  */
+    --light-purple-color: #C3BBCC;
+    --purple-color: #88799A;
+    --label-purple: #9694A6;
+    --grey-label-text: #92919A;
+    --grey-purple-color: #615A69;
+    --medium-grey-purple-color: #E7E3EB;
+    --light-grey-purple: #dcd9de;
+    --dark-grey-color: #373737;
+    --dark-blue-color: #0C0033;
+    --medium-grey-color: #6A6A6A;
+    --grey-color: #4e4e4e;
+
+    /*  Text Sizes  */
+    --inputs-small-text-size: 1rem;
+    --inputs-text-size: 1.1rem;
+    --headings-text-size: 1.3rem;
 }
 
 .App :global(.ui.segment) {
-  text-align: left;
+    text-align: left;
 }
 
+.App :global(.ui.input input) {
+    border: 1px solid var(--light-purple-color);
+}
+
+.App :global(.ui.form .field label) {
+    color: var(--label-purple);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    opacity: 1;
+}
+
+.App :global(.ui.button.secondary) {
+    background-color: var(--medium-grey-color);
+    font-size: var(--headings-text-size);
+    font-weight: 100;
+}
+
+.App :global(.ui.button.secondary:hover) {
+    background-color: var(--grey-color);
+}
+
+.App :global(.ui.form .field.disabled) {
+    opacity: 1;
+}
+
+.App :global(.ui.form .field.disabled input) {
+    color: var(--grey-purple-color);
+    background-color: var(--light-grey-purple);
+    opacity: 1;
+}
+
+.App :global(.ui.header) {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+
+.App :global(.ui.form input), .App :global(.ui.form textarea) {
+    font-family: "Open Sans", sans-serif;
+    font-size: var(--inputs-text-size);
+    padding: 8px;
+    color: var(--dark-blue-color);
+}

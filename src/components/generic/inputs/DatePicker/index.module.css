@@ -1,0 +1,10 @@
+.date_picker {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    right: 6px;
+    bottom: 14px;
+    color: var(--dark-blue-color);
+}

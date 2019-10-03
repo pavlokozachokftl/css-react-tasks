@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header a {
+    color: var(--dark-blue-color);
+    margin-right: 7px;
+}
+
+.header span {
+    color: var(--grey-color);
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--headings-text-size);
+    font-weight: 600;
+}
+
+.min_width {
+    min-width: 100px;
+}

@@ -1,0 +1,42 @@
+.rounded_select {
+    border-radius: 50%;
+    position: relative;
+}
+
+.rounded_select :global(.ui.dropdown) {
+    position: relative;
+    width: 100%;
+    height: 38px;
+
+    border: 1px solid var(--light-purple-color);
+    border-radius: 32px;
+}
+
+.rounded_select :global(.ui.dropdown .text) {
+    position: absolute;
+    top: 8px;
+    left: 14px;
+    font-size: var(--inputs-small-text-size);
+}
+
+.rounded_select :global(.ui.dropdown .dropdown.icon) {
+    position: absolute;
+    top: 13px;
+    right: 14px;
+}
+
+.rounded_select :global(.ui.dropdown .visible.menu.transition) {
+    width: 100%;
+    position: absolute;
+    top: 42px;
+}
+
+.rounded_select :global(.ui.dropdown .menu.transition .item) {
+    height: 30px;
+}
+
+.rounded_select :global(.ui.pointing.above.prompt.label) {
+    position: absolute;
+    left: 0;
+    top: 60px;
+}
