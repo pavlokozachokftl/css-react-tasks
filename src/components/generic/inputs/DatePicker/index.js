@@ -24,7 +24,7 @@ const CustomDatePicker = (props) => {
                         onChange={handleChange}
                         selected={value}
                         name={name}
-                        dateFormat="dd/mm/yyyy"
+                        dateFormat="dd/MM/yyyy"
             />
             <Icon className={styles.icon} name={'calendar outline'}/>
         </Form.Field>
